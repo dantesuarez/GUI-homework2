@@ -1,0 +1,142 @@
+/*  
+	Name: Dante Suarez
+	Class: GUI Programming I
+	Assignment: Homework 2 - CSS Styling
+	Date: 9/22/2022
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/* Set the background color and image and used repeat-x
+	to make it repeat horizontally across the screen */
+body {
+	background-color: #00569f; 
+	background-repeat: repeat-x;
+	background-image: url("ptrbackground.jpg");
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Here I set the background image to the sunset picture.
+	Also turned off the default repeat and set it to the
+	right side of the background. Lastly changed the 
+	background color to make it look like it fades right
+	into the image. */
+header {
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #000033;
+	color: #FFFFFF;
+}
+
+/* Made the nav menu 200px wide and set it to the left side */
+nav {
+	width: 200px;
+	float: left;
+}
+
+/* Changed the text of the nav menu to make the font larger
+	and remove the blue color and underlines from the text. */
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+	padding: 15px;
+	margin: 0;
+}
+
+/* Made the nav menu text bolder and removed the bullet points.
+	Also changed the text color to the same as the background color. */
+nav a {
+	font-weight: 700;
+	text-decoration: none;
+	color: #000033;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Set the width to always be 80% of the page unless the window
+	gets resized to be less than 600px wide.  Also centered the content
+	of our webpage */
+#wrapper {
+	width: 80%;
+	min-width: 600px;
+	background-color: #90c7e3;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Used margin and padding commands to position the content directly
+	to the right of the nav menu and under the heading. */
+#content {
+	margin-left: 200px;
+	padding-top: 1px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	background-color: #FFFFFF;
+}
+
+/* Changed the bullet points in the content list to be the provided
+	image, and used list-style-position to align the text under the
+	above paragraph */
+#content ul {
+	list-style-image: url("marker.gif");
+	list-style-position: inside;
+	margin: 20px;
+}
+
+/* Gave the image a slight margin so that it is not crowded up next to
+	the nav menu and the header */
+#content img {
+	margin-right: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+/* Slightly modified the size of the contact text */
+#contact {
+	font-size: 14px;
+}
+
+dt {
+	color: #000033;
+}
+
+/* Changed the font size and style to match the assignment sheet.
+	Also moved it to be directly to the right of the 
+	nav menu. Added padding to fit the content section and changed
+	the background color to white so it blends in correctly. */
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 200px;
+	padding: 30px;
+	background-color: #FFFFFF;
+}
+
+/* Made the first three letters witht the resort class bolder
+	and changed the color to match the assignment sheet. */
+.resort {
+	font-weight: 700;
+	color: #799cbb
+}
